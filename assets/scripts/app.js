@@ -38,6 +38,10 @@ function attackHandler() {
     attackMonster("ATTACK");
 }
 
+function test() {
+
+}
+
 function strongAttackHandler() {
     attackMonster("STRONG_ATTACK_VALUE");
 }
