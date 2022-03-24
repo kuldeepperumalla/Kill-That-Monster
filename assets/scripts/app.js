@@ -31,7 +31,9 @@ function attackMonster(mode) {
     currentMonsterHealth -= damage;
     endRound();
 }
-
+/**
+ * @author kuldeep
+ */
 function attackHandler() {
     attackMonster("ATTACK");
 }
