@@ -6,7 +6,7 @@ let chosenMaxLife = 100;
 let currentMonsterHealth = chosenMaxLife;
 let currentPlayerHealth = chosenMaxLife;
 
-adjustHealthBars(chosenMaxLife); // sets max value for a placeholder
+adjustHealthBars(chosenMaxLife);
 
 function endRound() {
     const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE);
@@ -35,8 +35,6 @@ function attackMonster(mode) {
 function attackHandler() {
     attackMonster("ATTACK");
 }
-
-
 
 function strongAttackHandler() {
     attackMonster("STRONG_ATTACK_VALUE");
