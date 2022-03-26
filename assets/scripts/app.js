@@ -19,9 +19,7 @@ function endRound() {
         alert("You have a draw");
     }
 }
-function add() {
 
-}
 function attackMonster(mode) {
     let maxDamage;
     if (mode === "ATTACK") {
