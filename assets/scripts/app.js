@@ -10,7 +10,8 @@ let hasBonusLife = true;
 adjustHealthBars(chosenMaxLife);
 
 function reset() {
-    currentMonsterHealth, currentPlayerHealth = chosenMaxLife;
+    currentMonsterHealth = chosenMaxLife;
+    currentPlayerHealth = chosenMaxLife;
     resetGame(chosenMaxLife);
 }
 function endRound() {
