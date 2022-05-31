@@ -5,6 +5,8 @@ const attackBtn = document.getElementById('attack-btn');
 const strongAttackBtn = document.getElementById('strong-attack-btn');
 const healBtn = document.getElementById('heal-btn');
 const logBtn = document.getElementById('log-btn');
+const monsterEvent = document.getElementById('monsterEvent');
+const playerEvent = document.getElementById('playerEvent');
 
 /**
  * @param {Numeber} maxLife - sets the progressbar value

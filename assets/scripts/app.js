@@ -32,14 +32,14 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
     };
 
     switch (ev) {
-        case LOG_EVENT_MONSTER_ATTACK:
+        case LOG_EVENT_PLAYER_ATTACK:
             logEntry.target = 'MOSNTER';
             break;
         case LOG_EVENT_PLAYER_STRONG_ATTACK:
             logEntry = {
                 event: ev,
                 value: val,
-                target: 'PLAYER',
+                target: 'MOSNTER',
                 finalMonsterHealth: monsterHealth,
                 finalPlayerHealth: playerHealth
             };
@@ -66,7 +66,6 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
             logEntry = {
                 event: ev,
                 value: val,
-                target: 'PLAYER',
                 finalMonsterHealth: monsterHealth,
                 finalPlayerHealth: playerHealth
             };
@@ -221,7 +220,15 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-    console.log(battleLog);
+    let i = 0;
+    for (const logEntry of battleLog) {
+        console.log(`#${i}`);
+        for (const key in logEntry) {
+            console.log(`${key} : ${logEntry[key]}`);
+        }
+        i++;
+        break;
+    }
 }
 
 attackBtn.addEventListener("click", attackHandler);
